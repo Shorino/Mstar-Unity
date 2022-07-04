@@ -25,7 +25,7 @@ public class AudioManager : MonoBehaviour
 
     #region Audio Files
     public int currentlySelectedSongIndex;
-    public static string folderPath = "c://Mstar Unity/Songs/";
+    public static string folderPath = Directory.GetCurrentDirectory() + "/UserData/Songs/";
     public static DirectoryInfo dir = new DirectoryInfo(folderPath);
     FileInfo[] file = dir.GetFiles("*.*");
     [HideInInspector] public List<string> songName = new List<string>();

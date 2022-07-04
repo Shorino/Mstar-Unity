@@ -1,0 +1,5 @@
+Music Volume:0.2;
+Sound Volume:1;
+Bubble Shrink Duration:0.7;
+Outline Bloom Level:0.137;
+#

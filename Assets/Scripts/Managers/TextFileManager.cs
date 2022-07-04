@@ -12,7 +12,7 @@ public class TextFileManager : MonoBehaviour
 {
     public static TextFileManager singleton;
 
-    public static string folderPath = "c://Mstar Unity/Beatmaps/";
+    public static string folderPath = Directory.GetCurrentDirectory() + "/UserData/Beatmaps/";
     public static DirectoryInfo dir = new DirectoryInfo(folderPath);
     FileInfo[] file = dir.GetFiles("*.*");
     public List<FilePath> notesPath = new List<FilePath>();

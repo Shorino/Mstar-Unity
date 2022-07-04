@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using System.IO;
-using UnityEngine.UI;
 
 public enum ChainCondition
 {//             1           2          3           4           5           6          7
@@ -59,7 +58,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region game settings file
-    public static string folderPath = "c://Mstar Unity/GameSettings.txt";
+    public static string folderPath = Directory.GetCurrentDirectory() + "/UserData/GameSettings.txt";
     public static DirectoryInfo dir = new DirectoryInfo(folderPath);
     int column;
     string tempString;
